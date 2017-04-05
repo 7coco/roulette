@@ -48,11 +48,20 @@
   </head>
   <body class="parent">
     <h1 class="inner">部署紹介プロジェクト</h1>
-    <h2>お題ルーレット！</h2>
-    <img src="images/img_start@1x.png" id="startButton">
-    <img src="images/img_stop@1x.png" id="stopButton" style="display:none;">
-    <input type="button" value="Stop!" id="stopButton" style="display:none;">
-    <div id="theme">お題</div>
+    <div class="description">
+      <div>START ボタンを押すとお題がぐるぐる周りだすよ！</div>
+      <div>ここだと思ったタイミングでSTOPボタンを押してね。</div>
+      <div>お題の回るスピードはだんだんゆっくりになって、最終的にアニメーションして止まるから、確実に止まったのを確認してね！</div>
+    </div>
+    <div class="roulette">
+      <div>
+        <img src="images/img_title@2x.png">
+      </div>
+      <img src="images/img_start.png" id="startButton">
+      <img src="images/img_stop.png" id="stopButton" style="display:none;">
+      <input type="button" value="Stop!" id="stopButton" style="display:none;">
+      <div id="theme">お題</div>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="index.css">

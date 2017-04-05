@@ -47,8 +47,7 @@ $(function(){
   }
 
   function themeDecideAnimation(){
-    $theme.animate( { width:"500px" }, { queue:false, duration:3000 } )
-                  .animate( { fontSize:"4em" }, 1500 )
-                  .animate( { borderRightWidth:"15px" }, 1500);
+    $theme.animate( { fontSize:"4em" }, 1500 )
+
   }
 });
