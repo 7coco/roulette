@@ -5,17 +5,19 @@ $(function(){
 
   var themes = ["お題1", "お題2", "お題3", "お題4", "お題5", "お題6"];
   var hundredInterval;
+  var startLeft = $startButton.offset().left;
 
   $startButton.click(function(){
     $startButton.css("display", "none");
-    $stopButton.css({"display": "block", "text-align": "center"});
+    console.log(startLeft);
+    $stopButton.css({"position": "absolute", "display": "block", "left": startLeft});
     customInterval = setInterval(function(){
       $theme.text(themes[Math.floor(Math.random() * themes.length)]);
     }, 30);
   });
 
   $("#stopButton").click(function(){
-    $stopButton.css("display", "none");
+    $stopButton.css({"display": "none"});
     setTimeout(function(){
       customSetInterval(100);
       setTimeout(function(){
