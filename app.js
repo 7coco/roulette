@@ -7,6 +7,7 @@ $(function(){
   var hundredInterval;
 
   $startButton.click(function(){
+    $startButton.css("display", "none");
     $stopButton.css("display", "block");
     customInterval = setInterval(function(){
       $theme.text(themes[Math.floor(Math.random() * themes.length)]);
