@@ -8,7 +8,7 @@ $(function(){
 
   $startButton.click(function(){
     $startButton.css("display", "none");
-    $stopButton.css("display", "block");
+    $stopButton.css({"display": "block", "text-align": "center"});
     customInterval = setInterval(function(){
       $theme.text(themes[Math.floor(Math.random() * themes.length)]);
     }, 30);
